@@ -1,0 +1,19 @@
+@startuml
+abstract class "Pieza"
+class Rey
+class Peon
+class Alfil
+class Caballo
+class Torre
+class Reina
+
+Pieza <|-- Rey
+Pieza <|-- Peon
+Pieza <|-- Alfil
+Pieza <|-- Caballo
+Pieza <|-- Torre
+Pieza <|-- Reina
+Pieza : mover(tablero:Tablero,fila:int,columna:int) : Void
+Pieza : esMovimientoValido(fila:int,columna:int) : Boolean
+Pieza : color : ColorPieza
+@enduml
